@@ -1,2 +1,3 @@
 # bootstrap-training
-Store code for Lynda.com bootstrap course
+Stores code for Lynda.com bootstrap course.  Also used for github training. 
+
