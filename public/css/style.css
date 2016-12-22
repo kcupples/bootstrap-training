@@ -10,7 +10,14 @@
   margin: 0 auto;
   display: block;
 }
-
+.warning {
+	text-align: center;
+	color: purple;
+	font-style: italic;
+}
+footer{
+	font-style: italic;
+}
 .services section {
   text-align:	 center;
 }
