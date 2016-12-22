@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap Forms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <fieldset>
+            <legend>Feedback Form</legend>
+            <label>Your name:</label>
+            <input type="text" name="name" placeholder="First and Last">
+            <br>
+            <label>Twitter username</label>
+            @<input type="text" name="twitter" placeholder="@twitter">
+            <br>
+            <label>Your favorite session you attended was:</label>
+            <label class="radio"><input type="radio" name="favoritesession" value="html5">
+              HTML5</label>
+              <label class="radio"><input type="radio" name="favoritesession" value="css3">
+                CSS3</label>
+                <label class="radio"><input type="radio" name="favoritesession" value="bootstrap"> Bootstrap</label>
+                <label class="radio"><input type="radio" name="favoritesession" value="foundation"> Foundation</label>
+                <label>Would you come to this conference again?</label>
+                <label class="radio inline">
+                  <input type="radio" name="comeagain" value="yes"> Yes
+                </label>
+                <label class="radio inline">
+                  <input type="radio" name="comeagain" value="no"> No
+                </label>
+                <label>Your continent:</label>
+                <select name="continent" size="1" class="col-xs-4">
+                  <option selected>Select one...</option>
+                  <option value="afr">Africa</option>
+                  <option value="ant">Antarctica</option>
+                  <option value="asia">Asia</option>
+                  <option value="aus">Australia</option>
+                  <option value="eur">Europe</option>
+                  <option value="na">North America</option>
+                  <option value="sa">South America</option>
+                </select>
+                <label>Comments:</label>
+                <textarea id="comments" name="comments" title="We welcome your feedback" data-toggle="tooltip" data-placement="top"></textarea>
+                <label><input name="subscribe" type="checkbox" value="subscribe" data-toggle="collapse" data-target="email">
+                  Subscribe me to the newsletter </label>
+                  <div id="email" class="collapse in">
+                    <label>Your email</label>
+                    <input type="text" name="email">
+                  </div>
+                  <p><button type="submit" class="btn btn-warning btn-lg">Submit</button></p>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.1.1.min.js"></script> 
+      <script src="js/bootstrap.min.js"></script> 
+      <script type="text/javascript">
+        $('#comments').tooltip();
+        $('.collapse').collapse();
+      </script>
+    </body>
+    </html>
