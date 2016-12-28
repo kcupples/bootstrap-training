@@ -33,3 +33,12 @@ footer{
 .btn-success{
 	background-color: purple;
 }
+
+.navbar-inverse {
+	background-color:#5d0606;
+	border-color: #c31e1e;
+
+}
+.content{
+	padding-top: 50px;
+}
